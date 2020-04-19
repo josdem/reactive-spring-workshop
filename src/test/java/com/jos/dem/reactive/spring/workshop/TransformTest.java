@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TransformTest {
+class TransformTest {
 
   @Test
   @DisplayName("Transform operator")

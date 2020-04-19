@@ -2,7 +2,6 @@ package com.jos.dem.reactive.spring.workshop;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.FluxSink;
 import reactor.core.publisher.ReplayProcessor;
@@ -10,7 +9,6 @@ import reactor.test.StepVerifier;
 
 import java.util.stream.IntStream;
 
-@SpringBootTest
 class ReplayProcessorTest {
 
   @Test
