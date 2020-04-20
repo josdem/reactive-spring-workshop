@@ -8,15 +8,15 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-public class FlatMapTest {
+public class ConcatMapTest {
 
   @Test
-  @DisplayName("flap map test")
-  void shouldFlapMap() {
+  @DisplayName("concat map test")
+  void shouldConcatMap() {
     Flux<Integer> data =
         Flux.just(new Pair(1, 300), new Pair(2, 200), new Pair(3, 100))
-            .flatMap(pair -> this.delayReplyFor(pair.getId(), pair.getDelay()));
-    StepVerifier.create(data).expectNext(3, 2, 1).verifyComplete();
+            .concatMap(pair -> this.delayReplyFor(pair.getId(), pair.getDelay()));
+    StepVerifier.create(data).expectNext(1, 2, 3).verifyComplete();
   }
 
   private Flux<Integer> delayReplyFor(Integer i, long delay) {
