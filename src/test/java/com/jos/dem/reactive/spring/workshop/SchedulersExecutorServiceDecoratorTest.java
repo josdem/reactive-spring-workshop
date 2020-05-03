@@ -20,8 +20,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SchedulersExecutorServiceDecoratorTest {
 
+  private static final String RSB = "rsb";
+
   private final AtomicInteger methodInvocationCounts = new AtomicInteger();
-  private String rsb = "rsb";
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -29,7 +30,7 @@ class SchedulersExecutorServiceDecoratorTest {
   void before() {
     Schedulers.resetFactory();
     Schedulers.addExecutorServiceDecorator(
-        this.rsb, (scheduler, scheduledExecutorService) -> this.decorate(scheduledExecutorService));
+        RSB, (scheduler, scheduledExecutorService) -> this.decorate(scheduledExecutorService));
   }
 
   @Test
@@ -68,6 +69,6 @@ class SchedulersExecutorServiceDecoratorTest {
   @AfterEach
   void after() {
     Schedulers.resetFactory();
-    Schedulers.removeExecutorServiceDecorator(rsb);
+    Schedulers.removeExecutorServiceDecorator(RSB);
   }
 }
