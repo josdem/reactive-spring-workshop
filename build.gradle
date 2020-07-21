@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.jos.dem.reactive.spring.workshop'
 version = '1.0.0-SNAPSHOT'
-sourceCompatibility = '12'
+sourceCompatibility = '13'
 
 configurations {
 	compileOnly {
