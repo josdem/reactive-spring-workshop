@@ -1,4 +1,4 @@
-package com.jos.dem.reactive.spring.workshop;
+package com.jos.dem.reactive.spring.workshop.beginner;
 
 import com.jos.dem.reactive.spring.workshop.model.Pair;
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +8,7 @@ import reactor.test.StepVerifier;
 
 import java.time.Duration;
 
-public class FlatMapTest {
+class FlatMapTest {
 
   @Test
   @DisplayName("flat map test")
