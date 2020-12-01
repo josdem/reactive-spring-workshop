@@ -12,5 +12,11 @@ gradle test
 #### To run a single test in the project
 
 ```bash
-gradle test --tests $testName
+gradle test --tests=$testName
+```
+
+#### To run a single test method in the project
+
+```bash
+gradle test --tests=$testName.$testMethod
 ```
