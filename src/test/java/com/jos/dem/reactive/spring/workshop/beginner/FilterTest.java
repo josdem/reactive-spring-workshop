@@ -1,11 +1,11 @@
-package com.jos.dem.reactive.spring.workshop;
+package com.jos.dem.reactive.spring.workshop.beginner;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
-public class FilterTest {
+class FilterTest {
 
   @Test
   @DisplayName("filter example")
