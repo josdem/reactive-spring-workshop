@@ -1,4 +1,4 @@
-package com.jos.dem.reactive.spring.workshop;
+package com.jos.dem.reactive.spring.workshop.advanced;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.junit.jupiter.api.AfterEach;
