@@ -8,7 +8,7 @@ import reactor.test.StepVerifier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class HandleTest {
+class HandleTest {
 
   @Test
   @DisplayName("handle test example")
