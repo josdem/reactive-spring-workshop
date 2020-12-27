@@ -1,4 +1,4 @@
-package com.jos.dem.reactive.spring.workshop;
+package com.jos.dem.reactive.spring.workshop.intermediate;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
