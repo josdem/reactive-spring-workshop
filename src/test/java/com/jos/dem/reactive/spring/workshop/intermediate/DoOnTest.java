@@ -1,4 +1,4 @@
-package com.jos.dem.reactive.spring.workshop;
+package com.jos.dem.reactive.spring.workshop.intermediate;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DoOnTest {
+class DoOnTest {
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
