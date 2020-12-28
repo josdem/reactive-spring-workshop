@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class SchedulersHookTest {
+class SchedulersHookTest {
 
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
